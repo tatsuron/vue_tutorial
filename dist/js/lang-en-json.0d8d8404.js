@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["lang-en-json"],{e312:function(e){e.exports=JSON.parse('{"en":{"message":{"hello":"hello world"}}}')}}]);
+//# sourceMappingURL=lang-en-json.0d8d8404.js.map
