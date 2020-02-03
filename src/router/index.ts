@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
-import I18nSetup from '@/I18nSetup'
+import {loadLanguageAsync} from '@/I18nSetup'
 
 Vue.use(VueRouter)
 
@@ -29,7 +29,7 @@ const router = new VueRouter({
 
 router.beforeEach((to, _from, next) => {
   const lang = to.params.lang
-  new I18nSetup().loadLanguageAsync(lang).then(() => next())
+  loadLanguageAsync(lang).then(() => next())
 })
 
 export default router
